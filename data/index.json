@@ -1,0 +1,358 @@
+{
+  "batches": [
+    {
+      "anchor": {
+        "blockHeight": 372950,
+        "network": "preview",
+        "txHash": "c1e428c882a04b4945af3dbbeb77d42e758d0c89602a9e46e0c43391c0805b25"
+      },
+      "batchId": "B-20260811-F4A4",
+      "files": {
+        "batch.json": "215b820325760d62a668e3edb039016f3e67207a64c65175814e8bd994a40701",
+        "root.bin": "014bb1eccca43be8f4fc4625e663c4ccc2a64f0b51b0bd46101dc930660c8551",
+        "root.bin.ots": "5dffdc285616823c6307c03e93e33be840be17b247cf9578d58ef38326e52890",
+        "root.tst": "e22be9a1f4349683cb0288ad5b8c550d46ef9402a13d0b7046f82da43aa6e265"
+      },
+      "root": "b137df8316f761b516155775ac8510a13cb3532325c38fa18282d008f394ba21",
+      "sealedAt": "2026-08-11T12:42:06.544Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 2973891,
+        "network": "mainnet",
+        "txHash": "93cfe767554267cb7da124393e7faf9f89b1eb82710df5beff5a0c969c68eab6"
+      },
+      "batchId": "B-20260914-7CF9",
+      "files": {
+        "batch.json": "6d548f64530f5fc3dabf857ef4177ec0332ebfef753b9a56fca10c88a2834b0e",
+        "root.bin": "37cfdef67da7adf5ed15ded8d5badb25e65aaf4ce5a446e06a21f4f6fc4892a1",
+        "root.bin.ots": "4274120b24735432cb0534e1e41efb3352b5700c87fd070f2e8e9563fe1f8d69",
+        "root.tst": "61efcafdd35916e3062ad735cd0953814349f3f2d532107e648e7c7d979cb0ba"
+      },
+      "root": "b652684c93d2aa03bc896a70dee0dd6d9bcd09aa74d59de718d4763b9afa6b0e",
+      "sealedAt": "2026-09-14T11:31:46.948Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 2973563,
+        "network": "mainnet",
+        "txHash": "e13c88f5a2fb38cf4feb08d7188d1c0dc3c575a4fb4dba3dbacb2f601896bcbf"
+      },
+      "batchId": "B-20261011-FE71",
+      "files": {
+        "batch.json": "1cb96765d5693e0f8a5bf511a85d35857f020b086f8fe72a0a1012e5e45f5f46",
+        "root.bin": "b4bfd264bb803e4793d4e40a033ef11eaa2d74aeee170b9af5a3c394c92b2bc4",
+        "root.bin.ots": "540cc44691a644b7898a4341c49587718d61ed40bbf12f8b0065244811edd6cc",
+        "root.tst": "0b117009ef5b203f8dbfd8dab5bbc2dd64419a3a64cbb736b68ba67fe076388a"
+      },
+      "root": "2e0be735fa4be9155d93282be2c19da4d9f46da45ade29183e2b01b768c3225b",
+      "sealedAt": "2026-10-11T23:01:10.439Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3095906,
+        "network": "mainnet",
+        "txHash": "58a0d96440a7692902be951e8bb13c9184ad4fcb8b19a661c1dc9a13b2c57f8c"
+      },
+      "batchId": "B-20261020-2493",
+      "files": {
+        "batch.json": "ec5535ea860ae019556219d8a0f684c2cd1bc120d68e38703c80534d2bc26600",
+        "root.bin": "e494d10179b84f68992b38fc9727e54056abd47d39938667b3ee5db0136c889d",
+        "root.bin.ots": "5365238e967fa2d8483f2aced0fce1319823549840eb45969b131e2d5ee984f8",
+        "root.tst": "1adc48a6f862882dc7d0fac742c4a226427fa8760ddabaa80d29260e871428be"
+      },
+      "root": "b45bf8012eae0e6ca167dec798a5c10abd384c541b4a5e3885e43df7b03e28b7",
+      "sealedAt": "2026-10-20T11:36:10.990Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3096556,
+        "network": "mainnet",
+        "txHash": "37fe113cfe9c4c44fccb39357a9566ffd9025536e05839cfb69649106783fed4"
+      },
+      "batchId": "B-20261020-281C",
+      "files": {
+        "batch.json": "d3d37efa0ef25e1fc0c753cb580e1278e69fdf9497d978601e9ee02df00b8c2a",
+        "root.bin": "5fe2d002a45bf4cf44a5d4306fde2a4b71237a26d7a08e62678fd3ae6a3fd2af",
+        "root.bin.ots": "7df626b553cfd8a15a52c511e6dc708826ab1b01af2f5d933ff87aee18a4d8bb",
+        "root.tst": "b86c0d0f9826c3d2e8b6e36fa485cd1d3ec5bf328832b771a99afe38568c9a4c"
+      },
+      "root": "1b0775e7236ccc5e66cc55322a5f96176dc6ac2e89bcab4509d039ca62b914f7",
+      "sealedAt": "2026-10-20T12:41:11.089Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3258813,
+        "network": "mainnet",
+        "txHash": "b167d99b94a5f65eee59da88ae31ff6d7d637b42dcbb2ad9e0703f07c7dddba2"
+      },
+      "batchId": "B-20261031-7DF0",
+      "files": {
+        "batch.json": "3bce38ab506e3731e8401da62fa6bec234507032d63d2dcd18c9b0af80957423",
+        "root.bin": "ff80d3957643444ff0bd9a38257f2fa1a1f226baa076d29a2558939684910491",
+        "root.bin.ots": "7ceddd58e7d34e5b040e605610770624b2c009d2c59b2bced7d95434110339f0",
+        "root.tst": "6ee6367f663b4e25c3c5b263f04e02dc02cfcaed3810bcea55ef7ffb9a1517ef"
+      },
+      "root": "51dbe04359dd1894c90bb3e78f3a721e8a664bd1b0f83b146b3b908181482bf8",
+      "sealedAt": "2026-10-31T15:06:15.947Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3370721,
+        "network": "mainnet",
+        "txHash": "0596d5021c5d09e17f1fe0454c0f662b9423d7f2242470ea6f3ef7e7c0048a8c"
+      },
+      "batchId": "B-20261108-0AF6",
+      "files": {
+        "batch.json": "66f621f07b830a922b3e87be4c704ff8f8edcdce3414801a778d0c280f790bca",
+        "root.bin": "cad2083954e63453aa3db1763af1b8f89703ecc2d799eb2d2204b4a0fcd1facd",
+        "root.bin.ots": "d6da03c9cff085a2cc01a5813e8d8628eca1362c1982a0f9ec1141c9ff1b440c",
+        "root.tst": "4168ce0fc31713716db09bc224f2f505ee07024135e8250b3f5a45959d7c2604"
+      },
+      "root": "3ac0be924f5cb95ec01a1a7fb99a67e5c8c17cad7158886306b5306ce4a1dc03",
+      "sealedAt": "2026-11-08T02:33:30.492Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3370920,
+        "network": "mainnet",
+        "txHash": "bf679abacd9381f0dec32cf2840e603c7dd20e1fe82c215e4aab6320775a3ec4"
+      },
+      "batchId": "B-20261108-5151",
+      "files": {
+        "batch.json": "bd5065c3ca688a1b1d7740c02b388fdb08578a206f346f2117429d95eaa6f4aa",
+        "root.bin": "54a052ad5f962e3d88ff5a0e6fe700a088e5256a397f9d1931d00d8c594b3fb9",
+        "root.bin.ots": "94f7fe9452b4b4b06c4b6a10e627c50460ba67e43cc87fd7461df4da5363e1d7",
+        "root.tst": "7212983ffd2ae7247046790f2366e39ee7c0d6214238573dade6fbb6df4a15d3"
+      },
+      "root": "ab9ddb281082bb03781630dde9dd0b7f4e61df19196947a7ab95f939d64de51f",
+      "sealedAt": "2026-11-08T15:09:00.300Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3371570,
+        "network": "mainnet",
+        "txHash": "956f1d6c92d81f8049577111fa5f52d9e7fdc36e58ff4d22e36826a2c5bed21e"
+      },
+      "batchId": "B-20261108-00DC",
+      "files": {
+        "batch.json": "9a5eb197742b9917c3478444ff857cb04798f34a9ff297192d5b72a9ddf46e8d",
+        "root.bin": "934805d272e7ec9a5cdd926b4711d744722613d0b4ac35baf615e3604f0e6ebc",
+        "root.bin.ots": "b5080bee2c830a3b3de9e5ed38c6390cc6694965c6c651750f1e447ffb63de16",
+        "root.tst": "1eb9ffe7e0ef7bc7e50e5f99b96bdce068cfab42982096a2b6c37b83802bfe42"
+      },
+      "root": "83c999470cf0b2abb20865f4c580dddb3d4a9de697b1cf4371c1a41bbd82e702",
+      "sealedAt": "2026-11-08T16:14:00.231Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3481943,
+        "network": "mainnet",
+        "txHash": "a9585cc2124cf3fad0f181b479138b832b441cbe9f1c1f508dd24460aefcd377"
+      },
+      "batchId": "B-20261116-DEBC",
+      "files": {
+        "batch.json": "29ce30831a790f11a83510402381c68321d9c766dcfa97bb25cfe2954cc39ef7",
+        "root.bin": "56a911f390581756f387239d5b480cc8d42bf840955e2f5572e6645ceaa9b1c0",
+        "root.bin.ots": "0656c663ee78b23518129d83d98ce96b4972b5f134f9dbfa3f976c1d2b97c7af",
+        "root.tst": "110c52e5b7dd8e863aee1841ad4481da97557a54e385e4fc4e3153b9d7c8b1e2"
+      },
+      "root": "612458d9a1d61e8d04a1b4e6d6f32721d4f3927fa3efa46484cddb3e9b47c248",
+      "sealedAt": "2026-11-16T12:14:07.591Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3488693,
+        "network": "mainnet",
+        "txHash": "6d524e42d0ce63e5928de46ec4402142d0a13530cc302f41c6171a44d61274c5"
+      },
+      "batchId": "B-20261116-AC3F",
+      "files": {
+        "batch.json": "e255563b99ddd5c9d042067bb4837dfb0f0d6d005f6fda365ce29d9c90922f42",
+        "root.bin": "a646399558850a0a99bddfb8c285c1955176909589a80b5bc39a7cdad9092fb8",
+        "root.bin.ots": "d2b06fdfe86087c0cfc5f30b165948aaf5de9357533936257e11b17b8a42bf7a",
+        "root.tst": "8dac4f57582abdcb5aa1eb2644ab20748116be225698b021c3ad0c29e6ec2f46"
+      },
+      "root": "b074df5d88edc7da5e7b0e0d0171c7757bd73c79567b521d8c7b7462c2b37c18",
+      "sealedAt": "2026-11-16T23:29:07.540Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3490943,
+        "network": "mainnet",
+        "txHash": "3ab5bde8f2fdf561b29d058a9c00c5229100f225e155922ec432007c3f7b81c3"
+      },
+      "batchId": "B-20261117-0F86",
+      "files": {
+        "batch.json": "e10fde7870003bd0547c02bc82d25a56725d79f19ddd1c71eaa4d1e11c41c80c",
+        "root.bin": "835700e784ba6bb374680f352b3721bc5ba069062009213a6e8cfb53e8069696",
+        "root.bin.ots": "9d44ca06984ff2f8e4fe9942722da7ebf607f407513a8b95c634288a36dcb989",
+        "root.tst": "9f5297ccde0dcd896236fa72fb3709f469348c6d75f51979997ea7b4d4f46d4a"
+      },
+      "root": "6779f00238ebffd822f87000bcf0b956d447fcf35a0ab5ecb1738d15f4565982",
+      "sealedAt": "2026-11-17T03:14:07.665Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3493442,
+        "network": "mainnet",
+        "txHash": "651a6729522005ef88025eaef63bf91f7eb502b5de1fc6622493d34b9c3ce49a"
+      },
+      "batchId": "B-20261117-7D80",
+      "files": {
+        "batch.json": "cc634910c248dfb862fb4a301398ca170e82595673693c444b748baccd142d9d",
+        "root.bin": "15a8ec62eb64bdc20bf57ac3fcc57aaa831e7c273b787dc09efbfd77e50b5d0b",
+        "root.bin.ots": "e862dffc7ca74e29e5b3f9d63e38932ef161e2ce5a0ac35abaa799e0d1f4b2b2",
+        "root.tst": "1f226416bb5862672089695fff8185ca5a27fd6efd11c035d7b0f0ddd3a190d7"
+      },
+      "root": "60b82ebd4b280f495321c52aa6c86803b96a1ebe3df0401688547caf30088399",
+      "sealedAt": "2026-11-17T07:24:07.576Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3494042,
+        "network": "mainnet",
+        "txHash": "d409df513cdf53252ba5d0258bba7ceab1e66a7fb045fd88041716c2d7772075"
+      },
+      "batchId": "B-20261117-D8D7",
+      "files": {
+        "batch.json": "1ed40af5df79351bab7308c08a845ba1b281f27dd377d65121a12d0fd6809503",
+        "root.bin": "30783cd36953406e0489dd4760d3196c76ef11fced1164cbb7e3922192c2a628",
+        "root.bin.ots": "490d5cc59d17c5de2a20be6f24088a8c0f5acff1fb24c56b67ce09567bb6a601",
+        "root.tst": "71ed5187e14e5c6980ecaf7647950a6e403527ef690bfa972102c196a6fba1fa"
+      },
+      "root": "5bb2a801a5abcca0927246f7ec7da5fe940011ad14fd48e318b8e0b33db3c349",
+      "sealedAt": "2026-11-17T08:24:07.610Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3495142,
+        "network": "mainnet",
+        "txHash": "36cd0d0a3292f7444ff00512fcad519e3a58b4297151019b8e94cbb755b4adf1"
+      },
+      "batchId": "B-20261117-8436",
+      "files": {
+        "batch.json": "f0900cb6fc1908cf41bed9fd74c7939a64b33b9ade5ce893200702dc7492e680",
+        "root.bin": "c7a9281f0f1b2cabcd9bb3cfde44502d38a04de8b91e29b0214f82a1e46503c5",
+        "root.bin.ots": "84639d43016c89129045dcd9e627a19ef32fa51056a884df45dcc37b39022614",
+        "root.tst": "f8a9f32d7459412c8840394bc753aee78888a60761c853085ea996c45c78156c"
+      },
+      "root": "84736b9b40f63dfea00eb714dae0013f2d047dea62890bbeab042325199c0337",
+      "sealedAt": "2026-11-17T10:14:07.666Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3498141,
+        "network": "mainnet",
+        "txHash": "5f8fc645393460aae16546dc7c74400fb54fb0ae306c67efd2a849455cb119da"
+      },
+      "batchId": "B-20261117-3C11",
+      "files": {
+        "batch.json": "250b1299001bd0ef21460fb8538e47d713d74b1fe316d847c7d257ea2c7c9600",
+        "root.bin": "298d6414b944c124c690c1612a5ca0005f86d3f2f8143aebeed3b4fd6025871e",
+        "root.bin.ots": "a2af4a1727a7560bcb391e6b2349f755f862644a1ebcafd586bb8b3b24d495c7",
+        "root.tst": "ac931e2bd13b8789b6c7db2c1cb5032c9d4e8222315f171abdf8f65a148d5d31"
+      },
+      "root": "fc04426e4bceec39424ff248af7bf2995f8d17ea6e00ab7517c80a8a525bcf14",
+      "sealedAt": "2026-11-17T15:14:07.724Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3510701,
+        "network": "mainnet",
+        "txHash": "5cb1d40a1a7564a346b8582351a79eada92fa60f1651a5cd969126b10926d7e4"
+      },
+      "batchId": "B-20261118-9EFB",
+      "files": {
+        "batch.json": "a5396bad70f46623a7b7a9d8e45beccb62f0e0d9a542653e3a2ed8959a10239d",
+        "root.bin": "eb99b058a953126b776c45b6cacd244b598f671e35a0fd5d4e9fff7553237045",
+        "root.bin.ots": "6f7cc7772ce2fef0104df3e20fd31d906c0828ea51de5c5239b44c44b4e2b2b3",
+        "root.tst": "66fe1cd5db7de6f7d48e616fedb91690ac6528ab119ac9875421f77521653dd3"
+      },
+      "root": "061d5d00b6fa9a9a260e55a2d916449fba9bfb87359e9de783a3d51a31aef1dd",
+      "sealedAt": "2026-11-18T12:14:07.855Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3514838,
+        "network": "mainnet",
+        "txHash": "51cb8bd13bcb55e8e91a167204cbc6ba404aa1db667d8f1c7e245496b84e9e0d"
+      },
+      "batchId": "B-20261118-BB86",
+      "files": {
+        "batch.json": "f9eb4364dc4b04e86d368e00d14b43c901dcc5459e817109eef151a980108518",
+        "root.bin": "1e3a6cfb7ea5318fb44ac2445cb64bb9e933002aebbfd23464b26a9a1d8d98b9",
+        "root.bin.ots": "ac11f43846940a617e61777ed384e82932b07c2183a50b4144ed74f233b15b3b",
+        "root.tst": "fa60964c5199aa0bc907edf7749c77cbfa351fd2bea9f719d5330b2a1eb30bd0"
+      },
+      "root": "07b0318b9ca705dcbeae495f78a92e60da1650fc80b9337017020c0c4822920b",
+      "sealedAt": "2026-11-18T19:09:07.947Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3515488,
+        "network": "mainnet",
+        "txHash": "495eb87a2bd54467f57d4bea25194cfd702279d79326c660cdf3713e9c251ed3"
+      },
+      "batchId": "B-20261118-EB89",
+      "files": {
+        "batch.json": "61e90fd547e0dc5948d96df7725a09e2837236f52cca6a955de8d1896022c8fb",
+        "root.bin": "03dd853964f761b9fed21ad596b8e6d3cee92082ff4c29e8e6d454d59e658771",
+        "root.bin.ots": "7520d5a176a3b8d438e6819a78a95a31059cf7b3f79a35967db8b8841e73eb4d",
+        "root.tst": "d5de740f90483c2e65b3964e0f305a91062b612c1be1a7b68f36c62db443da86"
+      },
+      "root": "c3e57a6ea67e151df7016486be45bf7d101b25218dd1485d772d8b6ea87e5013",
+      "sealedAt": "2026-11-18T20:14:07.904Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3516988,
+        "network": "mainnet",
+        "txHash": "1324e73a2cd3a9d5eb0a1fdfb2e93c026aaa1d9e993535eec5b065303e78bda1"
+      },
+      "batchId": "B-20261118-C44A",
+      "files": {
+        "batch.json": "1ce5f584bb229c60074a95690f2174f3051bc6091ff5357e23db0d4d66b8692e",
+        "root.bin": "00f66914b3b4a02dbf0de03bb2de796efcabfcf6dc005c1a8ca9315efa73a7c1",
+        "root.bin.ots": "89e51b31907665f933171eac0a9c6fb1f36327fb02fe7dc89dfac122034633da",
+        "root.tst": "afdd895201f10f63a2d5bb051996854d35a6e9d0ca9e5fab1f71397fc482ea80"
+      },
+      "root": "9e6fe956178695e51f01929276cada29c8b82eef7da6a6283f773083b94144bf",
+      "sealedAt": "2026-11-18T22:44:07.913Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3517638,
+        "network": "mainnet",
+        "txHash": "e843d296c9be0115ea92b4c9c7c4cd0db8e94375f7e657514df210881ee46524"
+      },
+      "batchId": "B-20261118-93B9",
+      "files": {
+        "batch.json": "707ad441d5d8b3450531745d47847d9531896d0457fa593682871631f68936e3",
+        "root.bin": "56a652640ef922100dbd89863651b4b0247d0e6892ab55325c984e466cce71b7",
+        "root.bin.ots": "ecdbe80dc7323bd98c78de46a4f9c05a0d28c6626d26124db12974dcbc3d91ce",
+        "root.tst": "5d252ac0fd6b0d8411ace9d926a53acb6fe64d23be89e313d50208c5fab878f6"
+      },
+      "root": "b1f6f68d833d67c7461aa96e45290758babd51d09cc100c4b2160433c010f9c2",
+      "sealedAt": "2026-11-18T23:49:07.869Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3518288,
+        "network": "mainnet",
+        "txHash": "4eb46baa4be2ddc4ce1f144be8530d348467d7e8d9d7f3930280c73216cfd1ce"
+      },
+      "batchId": "B-20261119-084C",
+      "files": {
+        "batch.json": "7a14c50b1ce83392d439ef6b15583ebecfc610bcf088ba9dcadfed02a79c5c2b",
+        "root.bin": "9fa2bfdd7129835443ccf4930abbdf09581af12fdb8517bbcfd2571652f4530c",
+        "root.bin.ots": "750e73c378599546969cd229990335733421df9efa92b4cdff9bdc1bf82661cc",
+        "root.tst": "420e867c38e0e0e85bbc1e9d03d729afa078ac909e6879610c29c9ac851d9755"
+      },
+      "root": "347dbd1ce22504c466867d195688f5d3782d033a380538800dc1535f439c61da",
+      "sealedAt": "2026-11-19T00:54:07.912Z"
+    }
+  ],
+  "format": "veilcore-mirror/1",
+  "registry": "https://veilcore-api-production.up.railway.app"
+}

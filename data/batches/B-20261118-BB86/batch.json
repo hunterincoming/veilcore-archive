@@ -1,0 +1,20 @@
+{
+  "anchor": {
+    "anchoredAt": "2026-11-18T19:09:18.000Z",
+    "blockHeight": 3514838,
+    "chain": "midnight",
+    "contractAddress": "a04de0a2684f3713276325649540c7278ffd07cba8b014e7489844f319a02347",
+    "network": "mainnet",
+    "testNetwork": false,
+    "txHash": "51cb8bd13bcb55e8e91a167204cbc6ba404aa1db667d8f1c7e245496b84e9e0d"
+  },
+  "batchId": "B-20261118-BB86",
+  "opentimestamps": {
+    "bitcoinBlockHeight": 976468,
+    "bitcoinBlockTime": "2026-11-18T19:17:17.000Z",
+    "status": "bitcoin"
+  },
+  "recordCount": 1,
+  "root": "07b0318b9ca705dcbeae495f78a92e60da1650fc80b9337017020c0c4822920b",
+  "sealedAt": "2026-11-18T19:09:07.947Z"
+}

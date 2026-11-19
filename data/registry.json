@@ -1,0 +1,15 @@
+{
+  "anchors": [
+    {
+      "chain": "midnight",
+      "contractAddress": "a04de0a2684f3713276325649540c7278ffd07cba8b014e7489844f319a02347",
+      "network": "mainnet"
+    }
+  ],
+  "api": "https://veilcore-api-production.up.railway.app",
+  "formatVersions": [
+    "0.1"
+  ],
+  "name": "VeilCore reference registry",
+  "specification": "https://github.com/hunterincoming/veilcore-sdk/blob/main/SPEC.md"
+}
