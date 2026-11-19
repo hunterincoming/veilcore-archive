@@ -1,0 +1,154 @@
+# The public mirror of VeilCore's dated batches, run by GitHub on a schedule.
+#
+# This file is a template kept in veilcore-api. It does nothing here. To set it up:
+#   1. Create a public GitHub repository (e.g. veilcore-archive) with "Add a README file".
+#   2. In it, Add file -> Create new file, name it .github/workflows/mirror.yml, paste this
+#      file, and commit.
+#   3. Actions tab -> Mirror -> Run workflow. A data/ folder appears with one folder per batch.
+#
+# Every six hours it copies every batch from the registry into data/ (scripts/mirror), checks
+# them with no VeilCore server, and commits whatever changed. The git history is a second
+# witness: a dated, public record of what the registry served and when.
+#
+#   mirror exit 0  normal: commit what changed.
+#   mirror exit 2  the registry changed history (a root, an anchor, a token or a proof changed
+#                  or gone). The mirror kept both versions; they are committed, and the run
+#                  fails, so GitHub emails the repository owner.
+#   mirror exit 1  the run could not finish (registry unreachable, or an answer it can't use).
+#                  The mirror is left exactly as it was and nothing is committed. A warning;
+#                  the run fails only once the registry has not answered for more than a day
+#                  (reachable.txt holds the last day it did; it is committed at most daily,
+#                  which also keeps GitHub from pausing the schedule for inactivity).
+#
+# Secrets: none beyond GitHub's own token, which only the push step sees.
+# BLOCKFROST_PROJECT_ID is optional: without it the Midnight check says "couldn't check".
+#
+# Once a week it also asks Software Heritage to archive the repository ("save code now"),
+# an independent copy outside GitHub. That step may fail without failing the run.
+name: Mirror
+
+on:
+  schedule:
+    - cron: '23 */6 * * *'   # every six hours
+    - cron: '41 4 * * 0'     # Sunday: fetch every file again, and ask Software Heritage
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: write   # to commit data/ to this repository; nothing else
+    steps:
+      - name: Check out this archive
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10  #v6.0.3
+        with:
+          path: archive
+          persist-credentials: false
+
+      # The mirror and checker, pinned to a reviewed commit of hunterincoming/veilcore-api:
+      # a change there reaches this archive only when this line is changed on purpose.
+      - name: Check out the mirror scripts
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10  #v6.0.3
+        with:
+          repository: hunterincoming/veilcore-api
+          ref: b7edc2259b1cb01262a59bccec9ad36b621520fa  # update on purpose; if the PR is squash-merged, use the merge commit on main
+          path: tool
+          persist-credentials: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e  #v6.4.0
+        with:
+          node-version: '24'
+
+      # No npm install: the scripts use Node's own modules only. Their output passes through
+      # printable() (no control characters), and workflow commands are switched off around it
+      # all the same, so nothing the registry sends can act as one.
+      - name: Mirror the registry
+        id: mirror
+        env:
+          FULL: ${{ github.event.schedule == '41 4 * * 0' && '--full' || '' }}
+        run: |
+          set +e
+          stop="$(openssl rand -hex 16)"
+          echo "::stop-commands::$stop"
+          node tool/scripts/mirror/witness.mjs mirror archive/data $FULL > mirror.log 2>&1
+          code=$?
+          cat mirror.log
+          echo "::$stop::"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+      - name: Check every batch, with no VeilCore server
+        id: check
+        if: steps.mirror.outputs.code == '0' || steps.mirror.outputs.code == '2'
+        env:
+          BLOCKFROST_PROJECT_ID: ${{ secrets.BLOCKFROST_PROJECT_ID }}
+        run: |
+          set +e
+          stop="$(openssl rand -hex 16)"
+          echo "::stop-commands::$stop"
+          node tool/scripts/mirror/witness.mjs check archive/data > check.log 2>&1
+          code=$?
+          cat check.log
+          echo "::$stop::"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+      - name: Run summary
+        if: always()
+        run: |
+          {
+            echo "## Mirror (exit ${{ steps.mirror.outputs.code }})"
+            echo '~~~~text'; cat mirror.log 2>/dev/null; echo '~~~~'
+            echo "## Check (exit ${{ steps.check.outputs.code || 'not run' }})"
+            echo '~~~~text'; cat check.log 2>/dev/null; echo '~~~~'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Only after a run that finished (exit 0, or 2 with the other version kept as evidence).
+      # A run that did not finish (exit 1) left data/ as it was and commits nothing.
+      - name: Commit what changed
+        if: steps.mirror.outputs.code == '0' || steps.mirror.outputs.code == '2'
+        working-directory: archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          date -u +%F > reachable.txt
+          git add data reachable.txt
+          if git diff --cached --quiet; then echo "nothing changed"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Mirror $(date -u +%Y-%m-%dT%H:%MZ)"
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" \
+            push -q origin HEAD
+
+      - name: Registry unreachable
+        if: steps.mirror.outputs.code != '0' && steps.mirror.outputs.code != '2'
+        working-directory: archive
+        run: |
+          last="$(cat reachable.txt 2>/dev/null || echo never)"
+          echo "::warning title=Registry unreachable::The mirror could not finish (see the log). The registry last answered on $last."
+          if [ "$last" = never ] || [ "$last" \< "$(date -u -d yesterday +%F)" ]; then
+            echo "The registry has not answered for more than a day."
+            exit 1
+          fi
+
+      - name: Ask Software Heritage to archive this repository
+        if: github.event.schedule == '41 4 * * 0' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: curl -fsS -X POST "https://archive.softwareheritage.org/api/1/origin/save/git/url/https://github.com/${GITHUB_REPOSITORY}/"
+
+      - name: Fail loudly if the registry changed history
+        if: steps.mirror.outputs.code == '2'
+        run: |
+          echo "The registry changed history: see data/conflicts/ in this repository and the run summary."
+          exit 1
+
+      - name: Fail if a check found a mismatch or could not run
+        if: steps.check.outputs.code != '' && steps.check.outputs.code != '0'
+        run: |
+          echo "check exit ${{ steps.check.outputs.code }}: see the run summary."
+          exit 1
