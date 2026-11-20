@@ -1,0 +1,18 @@
+{
+  "anchor": {
+    "anchoredAt": "2026-11-19T23:59:42.001Z",
+    "blockHeight": 3531920,
+    "chain": "midnight",
+    "contractAddress": "a04de0a2684f3713276325649540c7278ffd07cba8b014e7489844f319a02347",
+    "network": "mainnet",
+    "testNetwork": false,
+    "txHash": "1a7bddd19e382f9b96c27a1108253aef21da8666610882c48020fb276bdea97a"
+  },
+  "batchId": "B-20261119-01EC",
+  "opentimestamps": {
+    "status": "pending"
+  },
+  "recordCount": 2,
+  "root": "11bfbcf4b9b5d7f8996aa784ea52c9a917db85edb23b15d75d1788aee0d9869a",
+  "sealedAt": "2026-11-19T23:59:33.195Z"
+}

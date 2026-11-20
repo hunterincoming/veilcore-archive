@@ -351,6 +351,54 @@
       },
       "root": "347dbd1ce22504c466867d195688f5d3782d033a380538800dc1535f439c61da",
       "sealedAt": "2026-11-19T00:54:07.912Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3525938,
+        "network": "mainnet",
+        "txHash": "b89c4f38fcdbb61a58a8c3af40331261f8480d5d990a6893e91ea5d3aa4888fb"
+      },
+      "batchId": "B-20261119-8A71",
+      "files": {
+        "batch.json": "172ed70603b88c0eee215f909f75962b19bf07a0a7b4198c528dc585287d92d2",
+        "root.bin": "ac8e34c7951a4031292c0a68cac70e6368cbec40ba9975b8f6108d1c7bee8ee7",
+        "root.bin.ots": "0f7d7cb3b2bd0f68d362c4355bb30ab65c28167d846af0b5d3fff6ebcaf510b3",
+        "root.tst": "e15ef84866caae381b232dde6d7a4e82dbb22f17295fdc7112ec077af7c922d4"
+      },
+      "root": "de2919d29fc7b02a0c38ff71ea9ce84f401b726a035025205a692991dbdc610b",
+      "sealedAt": "2026-11-19T13:39:07.987Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3526588,
+        "network": "mainnet",
+        "txHash": "5782865e866aa9c9ce9db6644a2c02ea563d4e4b7d3a2f5ac783a9b86b20b987"
+      },
+      "batchId": "B-20261119-102B",
+      "files": {
+        "batch.json": "e65a4fe5c1bca3fcca8304fe17cb25dd7a4e4f31e68061e4d61571f1dff413c3",
+        "root.bin": "7455457f7fdb3fab6ade0c45022418ddb2f14f0939dcb145b8ebd35178bfc377",
+        "root.bin.ots": "163e58db3d893149a9116c1f850b8fb0b28d2009131e77ebe5484b924220fd53",
+        "root.tst": "b44202adf63587cb595c2276048581ade25740adeed242ce5c0c6f00573b8316"
+      },
+      "root": "f3842282cc71dd763f1c38a62fc42adf91b2cbe0909a85e30fa6d4d8b57518e9",
+      "sealedAt": "2026-11-19T14:44:08.070Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3531920,
+        "network": "mainnet",
+        "txHash": "1a7bddd19e382f9b96c27a1108253aef21da8666610882c48020fb276bdea97a"
+      },
+      "batchId": "B-20261119-01EC",
+      "files": {
+        "batch.json": "297e2801c250c1c1d4a329b6469611c2cfc10949a0ce3d90759a1f40a16e5df0",
+        "root.bin": "d674a3b6c0f5f76718734d231c3fd3990f629d36800e75be8971120d4ae0c74b",
+        "root.bin.ots": "3c5c7b8a421c93986fc59174e2e6dad2ead3597929f2d5f3bd5d28011f24d0ef",
+        "root.tst": "3e6136614058d1f6655b6a74420fcff306eafa430f57359256ce1e2fdb3bf1d5"
+      },
+      "root": "11bfbcf4b9b5d7f8996aa784ea52c9a917db85edb23b15d75d1788aee0d9869a",
+      "sealedAt": "2026-11-19T23:59:33.195Z"
     }
   ],
   "format": "veilcore-mirror/1",
