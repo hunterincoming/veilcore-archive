@@ -1,10 +1,8 @@
 # The public mirror of VeilCore's dated batches, run by GitHub on a schedule.
 #
-# This file is a template kept in veilcore-api. It does nothing here. To set it up:
-#   1. Create a public GitHub repository (e.g. veilcore-archive) with "Add a README file".
-#   2. In it, Add file -> Create new file, name it .github/workflows/mirror.yml, paste this
-#      file, and commit.
-#   3. Actions tab -> Mirror -> Run workflow. A data/ folder appears with one folder per batch.
+# This is the copy that runs, in this repository. Its source is the template in veilcore-api
+# (scripts/mirror/archive-workflow.yml): change it there first, then copy it here. To run a
+# mirror of your own, see docs/run-a-witness.md in veilcore-api.
 #
 # Every six hours it copies every batch from the registry into data/ (scripts/mirror), checks
 # them with no VeilCore server, and commits whatever changed. The git history is a second
