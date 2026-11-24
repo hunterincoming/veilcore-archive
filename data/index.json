@@ -463,6 +463,22 @@
       },
       "root": "fe29126b51968822d67ed475ec6bb0b10a18da99b495e731bfe2b0399e7a3215",
       "sealedAt": "2026-11-21T15:29:16.929Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3587740,
+        "network": "mainnet",
+        "txHash": "d9505577d6342c926eefad49f61fad4b1f703552c6dfede7dca7daa2c8482771"
+      },
+      "batchId": "B-20261124-FBBD",
+      "files": {
+        "batch.json": "5355c329b472e504e435c549c54e5dd93b2b23adc59ea6d273d0964f54bda7f7",
+        "root.bin": "3c176909dd9e552767291eddf97b06295a639a584ee0e24f9bafb739e7b347e9",
+        "root.bin.ots": "db4d95ef514d0f003326fcaf7183a002a7795703120c51e9b042a4e99c129024",
+        "root.tst": "0c91ccb7dd71b3c90ae6eb1fed84d71c15d6c28b7de310855248e82df3f5215b"
+      },
+      "root": "2b2317fb11870a730aca9015a480e980523364e1ac1883cb61fac0e1ad8292ff",
+      "sealedAt": "2026-11-24T02:19:21.495Z"
     }
   ],
   "format": "veilcore-mirror/1",
