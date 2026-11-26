@@ -479,6 +479,38 @@
       },
       "root": "2b2317fb11870a730aca9015a480e980523364e1ac1883cb61fac0e1ad8292ff",
       "sealedAt": "2026-11-24T02:19:21.495Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3626705,
+        "network": "mainnet",
+        "txHash": "00a17d49bf29c2ed5d5d106756eabf08a1bff899b4d9905bd4a4fcd8e7506ee4"
+      },
+      "batchId": "B-20261126-35C4",
+      "files": {
+        "batch.json": "51916ee48862bb26608851d0f69047df7a377697b0f20862b7cfbd596ebc96aa",
+        "root.bin": "eed79f8df80b6647c66c1029404fab85abf6f9c9fb0bd077dec8192b3793a1b1",
+        "root.bin.ots": "738b6cf05de9c0ea5d1221aacba253994807412a0f85b3111b12680f6807832b",
+        "root.tst": "55f20304e74557df16cc810b2b6cd21ad57cea449074236c6c6175d12e71e5a8"
+      },
+      "root": "69c8f0c53ebadc6c6e1e9e70ee11587720194af75845c6c952cb237709bbba84",
+      "sealedAt": "2026-11-26T20:20:17.389Z"
+    },
+    {
+      "anchor": {
+        "blockHeight": 3627305,
+        "network": "mainnet",
+        "txHash": "6c5e75a0c707bfee5747518f38e454803db12353ed4655fb8598fa766eb63cc7"
+      },
+      "batchId": "B-20261126-6DF6",
+      "files": {
+        "batch.json": "7c1cdc113b09c1e4a26c5857ad309851d8bcf51fa6f8f6bdc8dc654ce9d75428",
+        "root.bin": "43fa40d9eddc53069032188c30520728db00f1cbbe55c76a32d0d9e1a5bd7fb0",
+        "root.bin.ots": "c56d37c988181b28fd0394e3570653cceb8754d88c2598a458037a6128070af4",
+        "root.tst": "7a00308b77c7e545971b4948925b3d0c370ece32cf46acd4c65a72daca2bdbf0"
+      },
+      "root": "41053c71a77a99d8d9e311ed877fbd36fec69f300e64726a86371ad8865f5dbe",
+      "sealedAt": "2026-11-26T21:20:17.395Z"
     }
   ],
   "format": "veilcore-mirror/1",
