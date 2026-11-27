@@ -10,7 +10,9 @@
   },
   "batchId": "B-20261126-6DF6",
   "opentimestamps": {
-    "status": "pending"
+    "bitcoinBlockHeight": 977716,
+    "bitcoinBlockTime": "2026-11-26T21:55:45.000Z",
+    "status": "bitcoin"
   },
   "recordCount": 2,
   "root": "41053c71a77a99d8d9e311ed877fbd36fec69f300e64726a86371ad8865f5dbe",
